@@ -8,13 +8,20 @@
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
     <script src="js/displayChart.js"></script>
     <script src="js/fetchExchangeRates.js"></script>
+    <script src="js/convertCurrency.js"></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div id="chartView">
       <div class="header">
         <h1>FXTracker</h1>
-        <p id="currentRate">EUR/USD: Loading...</p>
+        <p>EUR/USD: <span id="currentRate">Loading...</span></p>
+        <div id="conversionSection">
+            <label for="euroAmount">Amount in EUR:</label>
+            <input type="number" id="euroAmount" placeholder="Enter amount in EUR">
+            <button onclick="convertCurrency()">Convert to USD</button>
+            <div id="conversionResult"></div>
+        </div>
       </div>
       <canvas id="exchangeRateChart"></canvas>
     </div>

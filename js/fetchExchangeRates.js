@@ -35,7 +35,7 @@ async function fetchExchangeRates() {
         const rates = data.map(entry => entry.conversion_rate);
 
         const currentRate = rates[rates.length - 1];
-        document.getElementById('currentRate').textContent = `EUR/USD: ${currentRate}`;
+        document.getElementById('currentRate').textContent = `${currentRate}`;
 
         displayChart(timestamps, rates);
     } catch (error) {
