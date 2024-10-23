@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#chartView {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+#currentRate {
+    font-size: 1.2em;
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+#exchangeRateChart {
+    display: block;
+    box-sizing: border-box;
+    height: 300px;
+    width: 900px;
+}

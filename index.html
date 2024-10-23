@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Exchange Rate</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <script src="js/displayChart.js"></script>
+    <script src="js/fetchExchangeRates.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="chartView">
+      <div class="header">
+        <h1>FXTracker</h1>
+        <p id="currentRate">EUR/USD: Loading...</p>
+      </div>
+      <canvas id="exchangeRateChart"></canvas>
+    </div>
+  </body>
+</html>
